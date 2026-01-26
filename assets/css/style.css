@@ -385,6 +385,7 @@ body {
 
 
 
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -628,7 +629,7 @@ textarea.contact-input {
   #FOOTER
 \*-----------------------------------*/
 
-.footer {
+/* .footer {
   background-color: var(--independence);
   padding-block: 60px;
 }
@@ -658,7 +659,99 @@ textarea.contact-input {
 
 .footer-link { transition: var(--transition-2); }
 
-.footer-link:is(:hover, :focus) { color: var(--white); }
+.footer-link:is(:hover, :focus) { color: var(--white); } */
+
+/* Modern footer layout */
+.footer-modern {
+  background-color: var(--independence);
+  padding: 60px 0;
+  color: var(--white);
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-brand .logo {
+  font-family: var(--ff-poppins);
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.footer-desc {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 14px;
+  max-width: 30ch;
+}
+
+.socials a {
+  font-size: 2.2rem;
+  margin-right: 12px;
+  color: var(--white);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  transform: translateY(-4px);
+  color: var(--orange-soda);
+}
+
+.footer-links ul,
+.footer-policy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-policy li {
+  margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-policy a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-links a:hover,
+.footer-policy a:hover {
+  color: var(--orange-soda);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  min-width: 200px;
+}
+
+.subscribe-msg {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.4rem;
+}
+
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    align-items: start;
+  }
+}
+
 
 
 
@@ -704,6 +797,347 @@ textarea.contact-input {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/* Bells */
+
+/* ---------- tech icons base ---------- */
+.abs-icon {
+  display: none;
+}
+
+/* hidden on small screens */
+
+/* Show and style icons on large screens */
+@media (min-width: 992px) {
+  .abs-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    z-index: 6;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+    transition: transform .18s ease, box-shadow .18s ease;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  /* icon content */
+  .abs-icon ion-icon {
+    font-size: 2.0rem;
+    color: #fff;
+    display: block;
+  }
+
+  .abs-icon img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    display: block;
+    filter: none;
+  }
+
+  /* hover lift */
+  .abs-icon:is(:hover, :focus) {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.36);
+  }
+
+  /* ---------------- corners (do not remove) ---------------- */
+  .abs-html {
+    top: -34px;
+    left: -34px;
+    background: #e34f26;
+  }
+
+  /* HTML */
+  .abs-css {
+    top: -34px;
+    right: -34px;
+    background: #2965f1;
+  }
+
+  /* CSS */
+  .abs-js {
+    bottom: -34px;
+    left: -34px;
+    background: #f7df1e;
+    color: #111;
+  }
+
+  /* JS */
+  .abs-react {
+    bottom: -34px;
+    right: -34px;
+    background: #61dafb;
+    color: #072a3b;
+  }
+
+  /* React */
+
+  /* ---------- circular/intermediate positions (red-circle marks) ---------- */
+  /* adjust percentages if your image size differs */
+  .abs-node {
+    top: 28%;
+    right: -14px;
+    background: #3c873a;
+  }
+
+  /* Node */
+  .abs-github {
+    top: 40%;
+    left:-14%;
+    background: #24292f;
+  }
+
+  /* GitHub */
+  .abs-git {
+    top: 54%;
+    right: 18%;
+    background: #f54d27;
+  }
+
+  /* Git branch */
+
+    .abs-mongo {
+      top: -19%;
+      left: 40%;
+      background: #4db33d;
+    }
+  
+    .abs-mongo img {
+      width: 110%;
+      height:120%;
+      object-fit: contain;
+      display: block;
+    }
+
+  /* Mongo (svg) */
+  .abs-express {
+    top: 18%;
+    right: 28%;
+    background: #111111;
+  }
+
+  /* Express (svg) */
+  .abs-sql {
+    bottom: 14%;
+    left: 12%;
+    background: #2b7bb9;
+  }
+
+  /* SQL (svg) */
+
+  .abs-java {
+    bottom: 10%;
+    right: 28%;
+    background: #eaf820;
+  }
+
+  /* Java */
+ .abs-python {
+   bottom: -12%;
+   /* move downward by increasing or decreasing this value */
+   left: 36%;
+   background: #306998;
+ }
+
+  /* Python */
+
+  /* ensure ionicon color follows background for JS/React (JS uses dark text) */
+  .abs-js ion-icon,
+  .abs-react ion-icon {
+    color: inherit;
+  }
+
+  /* Slightly larger on very wide screens */
+  @media (min-width: 1200px) {
+    .abs-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 14px;
+    }
+
+    .abs-icon ion-icon {
+      font-size: 2.6rem;
+    }
+
+    .abs-html {
+      top: -42px;
+      left: -42px;
+    }
+
+    .abs-css {
+      top: -42px;
+      right: -42px;
+    }
+
+     .abs-js {
+      bottom: -50px;
+      right: -40%;
+      }
+
+    .abs-react {
+      bottom: -42px;
+      right: -42px;
+    }
+  }
+
+  /* make sure about-banner allows overflow so icons float outside corners */
+  .about-banner {
+    position: relative;
+    overflow: visible;
+  }
+}
+
+
+/* ===== Responsive contact / form improvements ===== */
+
+/* make the contact-card use a column layout on small screens */
+.contact-card {
+  padding: 40px 20px;
+  /* slightly larger padding on mobile */
+}
+
+/* the wrapper already becomes grid at >=992px — ensure mobile stacks nicely */
+.contact-card .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* form layout */
+.contact-form {
+  width: 100%;
+  max-width: 720px;
+  /* keep it from getting too wide on big screens */
+  margin: 0;
+}
+
+/* inputs & textarea full width and comfortable height */
+.contact-input {
+  padding: 14px 18px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12) inset;
+  background: var(--white);
+  color: var(--manatee);
+  margin-bottom: 12px;
+}
+
+/* textarea slightly taller */
+textarea.contact-input {
+  min-height: 120px;
+  height: 150px;
+  resize: vertical;
+}
+
+/* submit button full width on small screens */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+
+/* contact list (address / email / phone) style for mobile */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+/* make each contact-item wrap nicely */
+.contact-item {
+  flex-direction: row;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* icon circle consistent size */
+.contact-icon {
+  min-width: 56px;
+  min-height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+/* contact item title & link spacing */
+.contact-item-title {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.contact-item-link {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* success/error message for submission */
+.contact-msg {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: none;
+  /* shown by JS */
+}
+
+/* small device tweaks already covered; on >=768px show two-column layout */
+@media (min-width: 768px) {
+  .contact-card .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .btn-submit {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* Hover + click (active) effect for contact items */
+.contact-item {
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: background 0.25s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-3px);
+}
+
+.contact-item:active {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(0.97);
+}
+
+/* highlight the link on hover */
+.contact-item:hover .contact-item-link,
+.contact-item:hover .contact-item-title {
+  color: var(--orange-soda);
+}
+
+.contact-item:hover .contact-icon {
+  background-color: var(--orange-soda);
+  transition: 0.25s ease;
+}
+
 
 /**
  * responsive for larger than 600px screen
@@ -870,7 +1304,7 @@ textarea.contact-input {
     margin-inline-start: auto;
   }
 
-  .elem {
+  /* .elem {
     position: absolute;
     display: flex;
     align-items: center;
@@ -878,26 +1312,26 @@ textarea.contact-input {
     background-color: var(--white);
     border-radius: var(--radius-10);
     padding: 20px;
-  }
+  } */
 
-  .elem-1 {
+  /* .elem-1 {
     top: 20px;
     left: -130px;
-  }
+  } */
 
-  .elem-1 .elem-title { color: var(--vivid-sky-blue); }
+  /* .elem-1 .elem-title { color: var(--vivid-sky-blue); }
 
   .elem-2 {
     bottom: 30px;
     right: -80px;
-  }
+  } */
 
-  .elem-2 .elem-title { color: var(--fiery-rose); }
+  /* .elem-2 .elem-title { color: var(--fiery-rose); } */
 
-  .elem-title {
+  /* .elem-title {
     font-size: 4.5rem;
     line-height: 1.1;
-  }
+  } */
 
   .elem-text {
     max-width: 10ch;
@@ -905,16 +1339,16 @@ textarea.contact-input {
     font-weight: var(--fw-700);
     line-height: 1.1;
   }
-
+/* 
   .elem-3 {
     top: -40px;
     right: -30px;
-  }
+  } */
 
-  .elem-3 ion-icon {
+  /* .elem-3 ion-icon {
     color: var(--minion-yellow);
     font-size: 6rem;
-  }
+  } */
 
   .rotate-img {
     display: block;
@@ -1055,4 +1489,20 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+}
+
+/* subscribe feedback */
+.subscribe-msg {
+  display: none;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* disabled button look */
+.subscribe-form button[disabled] {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
 }

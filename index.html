@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ethan Ward - Web Developer from New York</title>
+  <title>Profile-Viewer - Web Developer from New York</title>
 
   <!-- 
     - favicon
@@ -37,7 +37,7 @@
     <div class="container">
 
       <a href="#">
-        <h1 class="logo">Ethan Ward</h1>
+        <h1 class="logo">Profile-Viewer</h1>
       </a>
 
       <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
@@ -56,9 +56,9 @@
             <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
 
-          <li>
-            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-          </li>
+          <!-- <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Projects</a>
+          </li> -->
 
           <li>
             <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
@@ -73,7 +73,10 @@
           </li>
 
           <li>
-            <a href="#" class="btn btn-primary">Download CV</a>
+            <a href="./assets/resume.pdf" download="Manish-Jha-Resume" class="btn btn-primary">
+              Download CV
+            </a>
+
           </li>
 
         </ul>
@@ -98,19 +101,19 @@
 
           <div class="hero-banner">
 
-            <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+            <img src="./assets/images/hero-banner.png" width="800" height="864" loading="lazy" alt="Ethan's Photo"
               class="img-cover">
 
             <div class="elem elem-1">
-              <p class="elem-title">12</p>
+              <!-- <p class="elem-title">12</p> -->
 
-              <p class="elem-text">Years of Success</p>
+              <!-- <p class="elem-text">Years of Success</p> -->
             </div>
 
             <div class="elem elem-2">
-              <p class="elem-title">800+</p>
+              <!-- <p class="elem-title">800+</p> -->
 
-              <p class="elem-text">Projects Completed</p>
+              <!-- <p class="elem-text">Projects Completed</p> -->
             </div>
 
             <div class="elem elem-3">
@@ -126,15 +129,15 @@
 
             <h2 class="hero-title">
               <span>Hello I'm</span>
-              <strong>Ethan Ward</strong> Web Developer from New York
+              <strong>Manish Jha</strong> Full Stack Web Developer ...
             </h2>
 
             <p class="hero-text">
-              Adipisicing elit. Neque nulla voluptatum eos repellat deserunt nesciunt tempore porro totam.
-            </p>
+            <marquee scrollamount="10">I build modern, fast, and scalable web applications with clean code and creative problem-solving.</marquee>
+          </p>
 
             <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+              <a href="#contact" class="btn btn-primary blue">Get in Touch</a>
 
               <a href="#about" class="btn">About Me</a>
             </div>
@@ -157,23 +160,46 @@
 
           <figure class="about-banner">
 
-            <img src="./assets/images/about-banner.jpg" width="800" height="652" loading="lazy" alt="Ethan's Photo"
+            <img src="./assets/images/about-banner.png" width="800" height="652" loading="lazy" alt="Ethan's Photo"
               class="img-cover">
 
-            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
-              class="abs-img">
+            <!-- <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Ethan's Photo"
+              class="abs-img"> -->
 
-            <div class="abs-icon abs-icon-1">
-              <ion-icon name="logo-css3"></ion-icon>
+             <!--Bells -->
+            <!-- Tech icons around banner (paste inside the about-banner figure) -->
+            <!-- Corner icons (keep these 4 fixed) -->
+            <div class="abs-icon abs-html" aria-label="HTML5"><ion-icon name="logo-html5"></ion-icon></div>
+            <div class="abs-icon abs-css" aria-label="CSS3"><ion-icon name="logo-css3"></ion-icon></div>
+            <div class="abs-icon abs-js" aria-label="JavaScript"><ion-icon name="logo-javascript"></ion-icon></div>
+            <div class="abs-icon abs-react" aria-label="React"><ion-icon name="logo-react"></ion-icon></div>
+            
+            <!-- Intermediate / circular positions (the red circles in your mock)
+            <div class="abs-icon abs-node" aria-label="Node.js"><ion-icon name="logo-nodejs"></ion-icon></div> -->
+            <div class="abs-icon abs-github" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></div>
+            <!-- <div class="abs-icon abs-git" aria-label="Git"><ion-icon name="logo-git-branch"></ion-icon></div>  -->
+            
+            <!-- Fallback images for logos Ionicons doesn't provide (place SVGs in ./assets/icons/) -->
+            <div class="abs-icon abs-mongo" aria-label="MongoDB">
+              <img src="./assets/mongodb.png" alt="MongoDB logo">
             </div>
+            
+            <!-- <div class="abs-icon abs-express" aria-label="Express">
+              <img src="./assets/icons/express.svg" alt="Express logo">
+            </div> -->
+            
+            <!-- <div class="abs-icon abs-sql" aria-label="SQL">
+              <img src="./assets/icons/sql.svg" alt="SQL logo">
+            </div> -->
+            
+            <!-- <div class="abs-icon abs-java" aria-label="Java"><ion-icon name="logo-java"></ion-icon></div> -->
+            <div class="abs-icon abs-python" aria-label="Python"><ion-icon name="logo-python"></ion-icon></div>
+            <a href="https://nodejs.org" target="_blank" class="abs-icon abs-node" aria-label="Node.js">
+              <ion-icon name="logo-nodejs"></ion-icon>
+            </a>
 
-            <div class="abs-icon abs-icon-2">
-              <ion-icon name="logo-javascript"></ion-icon>
-            </div>
 
-            <div class="abs-icon abs-icon-3">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div>
+
 
           </figure>
 
@@ -184,17 +210,36 @@
             <h2 class="h2 section-title">I Develop Application that Help People</h2>
 
             <p class="section-text">
-              Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu
-              fugiat nulla pariatu epteur sint occaecat cupidatat
-            </p>
+            Hey! I’m Manish Jha — a Full Stack Developer who enjoys creating things that live on the internet.
+            I build responsive websites, dynamic applications, and smooth user experiences using modern tools and clean code.
+            I believe in writing maintainable code, designing meaningful interfaces, and continuously learning to stay ahead in the
+            tech world.<br/>
+            I’m also an active problem solver on different coding platforms:
+          </p>
+          <p style="display: flex; gap: 8px; flex-wrap: nowrap;">
+            <span>•</span>
+            <a href="https://leetcode.com/u/manish_jham/" target="_blank">LeetCode</a>
+            <span>•</span>
+            <a href="https://www.geeksforgeeks.org/user/manish_jha01/" target="_blank">GFG</a>
+            <span>•</span>
+            <a href="https://www.codechef.com/users/mjha01" target="_blank">CodeChef</a>
+            <span>•</span>
+            <a href="https://codeforces.com/profile/jhas67761" target="_blank">CodeForces</a>
+            <span>•</span>
+            <a href="https://www.hackerrank.com/profile/jhas67761" target="_blank">HackerRank</a>
+            <span>•</span>
+            <a href="https://atcoder.jp/users/Manish01" target="_blank">AtCoder</a>
+            
+          </p>
+
+
+
 
             <p class="section-text">
-              Krnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-              omnis
+             
             </p>
 
-            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+            <a href="#portfolio" class="btn btn-primary blue">View Projects</a>
 
           </div>
 
@@ -212,26 +257,31 @@
       <section class="section portfolio" id="portfolio">
         <div class="container">
 
-          <p class="section-subtitle">Portfolio</p>
+          <p class="section-subtitle">Project
 
           <h2 class="h2 section-title">My Amazing Works</h2>
 
           <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          Bookify is a modern and responsive online bookstore clone built using HTML, CSS, and JavaScript.
+          The website features a clean UI, intuitive navigation, and smooth interactions, making it easy for users to browse and
+          explore books.
           </p>
 
           <ul class="portfolio-list">
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.jpg')">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-1.png')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Youtube</p>
+                  <p class="card-subtitle">Bookify</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                  <h3 class="h3 card-title">Book Store Web Application</h3>
 
                   <span class="btn-link">
-                    <span>View Project</span>
+                    <span onclick="window.open('https://manishjha10.github.io/index.html/', '_blank')" style="cursor: pointer;">
+                      View Project
+                    </span>
+
 
                     <ion-icon name="arrow-forward"></ion-icon>
                   </span>
@@ -244,12 +294,14 @@
               <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-2.jpg')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Vimeo</p>
+                  <p class="card-subtitle">Task Adder</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                  <h3 class="h3 card-title">Developing a simple and efficient To-Do App to enhance productivity.</h3>
 
                   <span class="btn-link">
-                    <span>View Project</span>
+                    <span onclick="window.open('https://to-do-app-topaz-rho.vercel.app/', '_blank')" style="cursor: pointer;">
+                      View Project
+                    </span>
 
                     <ion-icon name="arrow-forward"></ion-icon>
                   </span>
@@ -259,33 +311,36 @@
             </li>
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-3.jpg')">
+              <a href="https://weather-pedia.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-card"
+                style="background-image: url('./assets/images/portfolio-3.jpg')">
                 <div class="card-content">
-
-                  <p class="card-subtitle">Soundcloud</p>
-
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
-
+                  <p class="card-subtitle">Weather_App</p>
+            
+                  <h3 class="h3 card-title">WeatherPedia – Live Weather Info</h3>
+            
                   <span class="btn-link">
+                    <!-- keep this span for styling, but anchor handles click -->
                     <span>View Project</span>
-
                     <ion-icon name="arrow-forward"></ion-icon>
                   </span>
-
                 </div>
               </a>
             </li>
 
+
+
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio-4.jpg')">
+              <a href="#" class="portfolio-card" style="background-image: url('./assets/images/portfolio1-4.png')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Details</p>
+                  <p class="card-subtitle">BhumiSetu</p>
 
-                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+                  <h3 class="h3 card-title">Bumi Setu – Online Dispute Resolution System</h3>
 
                   <span class="btn-link">
-                    <span>View Project</span>
+                  <span onclick="window.open('https://to-do-app-topaz-rho.vercel.app/', '_blank')" style="cursor: pointer;">
+                    View Project
+                  </span>
 
                     <ion-icon name="arrow-forward"></ion-icon>
                   </span>
@@ -315,14 +370,15 @@
           <h2 class="h2 section-title">I Develop Skills Regularly</h2>
 
           <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          I constantly improve my skills, learn new technologies, and solve problems to build modern, efficient, and scalable web
+           applications.
           </p>
 
           <ul class="skills-list">
 
             <li class="skills-item">
               <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">CSS</h3>
+                <h3 class=" skills-title">Java</h3>
 
                 <data class="skills-data" value="95">95%</data>
               </div>
@@ -334,7 +390,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React</h3>
+                <h3 class="skills-title">HTML</h3>
 
                 <data class="skills-data" value="75">75%</data>
               </div>
@@ -346,7 +402,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 90%">
-                <h3 class="skills-title">MongoDB</h3>
+                <h3 class="skills-title">CSS</h3>
 
                 <data class="skills-data" value="90">90%</data>
               </div>
@@ -358,7 +414,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">Python</h3>
+                <h3 class="skills-title">JavaScript</h3>
 
                 <data class="skills-data" value="70">70%</data>
               </div>
@@ -370,7 +426,7 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">PHP</h3>
+                <h3 class="skills-title">React</h3>
 
                 <data class="skills-data" value="80">80%</data>
               </div>
@@ -382,14 +438,16 @@
 
             <li class="skills-item">
               <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">JavaScript</h3>
+                <h3 class="skills-title">Python</h3>
 
-                <data class="skills-data" value="75">75%</data>
+                <data class="skills-data" value="75">50%</data>
               </div>
 
               <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
+                <div class="skills-progress" style="width: 50%"></div>
+              </div><br/>
+              <p style="color: red; margin-left: 370px;">And more..</p>
+
             </li>
 
           </ul>
@@ -412,21 +470,19 @@
 
             <p class="card-subtitle">Don't be shy</p>
 
-            <h2 class="h2 section-title">Drop Me a Line</h2>
+            <h2 class="h2 section-title">Connect Me</h2>
 
             <div class="wrapper">
 
-              <form action="" class="contact-form">
-
+              <form action="" class="contact-form" id="contact-form">
                 <input type="text" name="name" placeholder="Name" required class="contact-input">
-
                 <input type="email" name="email" placeholder="Email" required class="contact-input">
-
                 <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
-
                 <button type="submit" class="btn-submit">Submit Message</button>
-
               </form>
+              
+              <p class="contact-msg" aria-live="polite"></p>
+
 
               <ul class="contact-list">
 
@@ -440,7 +496,7 @@
                     <h3 class="contact-item-title">Address</h3>
 
                     <address class="contact-item-link">
-                      20, London, United Kingdom
+                    Rajpur , Agra ,India
                     </address>
                   </div>
 
@@ -455,7 +511,7 @@
                   <div>
                     <h3 class="contact-item-title">Email</h3>
 
-                    <a href="mailto:hello@ethan.com" class="contact-item-link">hello@ethan.com</a>
+                    <a href="mailto:hello@ethan.com" class="contact-item-link">jhas67761@gmail.com</a>
                   </div>
 
                 </li>
@@ -469,7 +525,7 @@
                   <div>
                     <h3 class="contact-item-title">Phone</h3>
 
-                    <a href="tel:+1234567890" class="contact-item-link">+123 456 7890</a>
+                    <a href="tel:+1234567890" class="contact-item-link">8791503124</a>
                   </div>
 
                 </li>
@@ -494,12 +550,12 @@
       <section class="section blog" id="blog">
         <div class="container">
 
-          <p class="section-subtitle">Latest News</p>
+          <p class="section-subtitle">Mini-Projects</p>
 
-          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
+          <h2 class="h2 section-title">Checkout My Project</h2>
 
           <p class="section-text">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+            I regularly build mini-projects to sharpen my skills, explore new ideas, and improve my development abilities.
           </p>
 
           <ul class="blog-list">
@@ -509,16 +565,16 @@
 
                 <figure class="card-banner">
                   <a href="#">
-                    <img src="./assets/images/blog-1.jpg" width="1181" height="843" loading="lazy"
+                    <img src="./assets/images/blog-1.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <a href="https://manishjha10.github.io/Modify_Tic_Tack_Toe/" target="_blank" class="card-tag">Tick-Tack-Toe</a>
 
-                <h3 class="card-title">
+                <!-- <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
+                </h3> -->
 
               </div>
             </li>
@@ -528,16 +584,16 @@
 
                 <figure class="card-banner">
                   <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="1181" height="843" loading="lazy"
+                    <img src="./assets/images/blog-2.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <a href="https://manishjha10.github.io/Currency-Convertor/"  targte="_blank" class="card-tag">Currency-Convertor</a>
 
-                <h3 class="card-title">
+                <!-- <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
+                </h3> -->
 
               </div>
             </li>
@@ -547,19 +603,21 @@
 
                 <figure class="card-banner">
                   <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="1181" height="843" loading="lazy"
+                    <img src="./assets/images/blog-3.png" width="1181" height="843" loading="lazy"
                       alt="Jim Morisson Says when the musics over turn off the light" class="img-cover">
                   </a>
                 </figure>
 
-                <a href="#" class="card-tag">Web Development</a>
+                <a href="https://manishjha10.github.io/Stone-Paper-Scissor-Game/" class="card-tag">Stone-Paper-Scissor</a>
 
-                <h3 class="card-title">
+                <!-- <h3 class="card-title">
                   <a href="#">Jim Morisson Says when the musics over turn off the light</a>
-                </h3>
+                </h3> -->
 
               </div>
             </li>
+
+            
 
           </ul>
 
@@ -577,7 +635,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
 
       <p class="copyright">
@@ -595,7 +653,74 @@
       </ul>
 
     </div>
+  </footer> -->
+
+
+  <footer class="footer footer-modern">
+    <div class="container footer-grid">
+  
+      <div class="footer-brand">
+        <a href="#top" class="logo">Profile-Viewer</a>
+        <p class="footer-desc">
+          I build modern, fast and scalable web apps. Reach out for collaborations or a quick chat.
+        </p>
+  
+        <div class="socials">
+          <a href="https://github.com/manishjha10" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="mailto:jhas67761@gmail.com">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </div>
+  
+        <p class="copyright">
+        <span id="current-year"></span> <strong>Manish Jha</strong>@All rights reserved.
+        </p>
+      </div>
+       
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      
+      <div class="footer-policy">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+  
+    
+      <div class="footer-newsletter">
+    
+        <p>Feel free to send me a message and connect.</p>
+  
+      <!-- Footer subscribe form -->
+      <form class="subscribe-form">
+        <input type="email" name="subscribeEmail" placeholder="Your email" required>
+        <button type="submit" class="btn btn-primary blue">Send</button>
+      </form>
+      <p class="subscribe-msg" aria-live="polite" style="display:none;"></p>
+
+  
+        <p class="subscribe-msg"></p>
+      </div>
+  
+    </div>
   </footer>
+
+
 
 
 

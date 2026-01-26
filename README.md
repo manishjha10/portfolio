@@ -1,54 +1,90 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/SAu7e09vXoQ?style=social)](https://youtu.be/SAu7e09vXoQ)
+📌 Profile-Viewer — Personal Developer Portfolio
 
-  <br />
-  <br />
+A modern, responsive, and fully-featured personal portfolio website built to showcase my projects, skills, and experience as a Full Stack Web Developer.
+This portfolio includes attractive UI sections, live project demos, smooth animations, and contact forms (interactive on both main section + footer).
 
-  <h2 align="center">Personal Portfolio Website</h2>
+🚀 Features
+✅ Responsive UI
 
-  Fully responsive personal portfolio website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+Works on all devices — mobile, tablet, desktop
 
-  <a href="https://codewithsadee.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
+Clean and modern layout with smooth transitions
 
-</div>
+🎨 Attractive Design
 
-<br />
+Animated tech-stack icons moving around the hero/about image
 
-### Demo Screeshots
+Stylish footer
 
-![Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
+Custom gradients, colors, overlays
 
-### Prerequisites
+📂 Portfolio Section
 
-Before you begin, ensure you have met the following requirements:
+Live preview links for each project
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+Hover animations
 
-### Run Locally
+Dedicated project cards
 
-To run **Portfolio** locally, run this command on your git bash:
+📊 Skills Section
 
-Linux and macOS:
+Progress bars showing expertise
 
-```bash
-sudo git clone https://github.com/codewithsadee/portfolio.git
-```
+Extra “And More..” tag for additional tools
 
-Windows:
+📨 Interactive Forms
 
-```bash
-git clone https://github.com/codewithsadee/portfolio.git
-```
+Main contact form with:
 
-### Contact
+Validation
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+Animated success/error messages
 
-### License
+Footer "Connect" form with:
 
-This project is **free to use** and does not contains any license.
+Email validation
+
+Fake submission animation
+
+🧭 Smart Navigation
+
+Sticky header
+
+Mobile-friendly nav menu
+
+Back-to-top button
+
+📄 Downloadable Resume
+
+Single-click CV download button
+
+🛠️ Tech Stack
+Frontend
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Ionicons
+
+Custom animations
+
+Tools Integrated
+
+React (Logo only)
+
+Node.js
+
+MongoDB
+
+Git / GitHub
+
+Python
+
+SQL
+
+Java
+
+Express.js (optional icon)
